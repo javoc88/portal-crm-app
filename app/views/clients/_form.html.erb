@@ -1,0 +1,13 @@
+<div class="container">
+  <%= simple_form_for @client do |f| %>
+    <%= f.input :email, label: "Correo electrónico" %>
+    <%= f.input :fullname,  label: "Nombre completo" %>
+    <%= f.input :phonenumber, label: "Número telefónico" %>
+    <%= f.input :status, label: "Estado" %>
+    <%= f.input :date, label: "Fecha de ingreso" %>
+    <%= f.input :talks, label: "Conversaciones" %>
+      <div class="btn-review d-flex justify-content-center">
+        <%= f.submit "Enviar", class: "btn" %>
+      </div>
+  <% end %>
+</div>
